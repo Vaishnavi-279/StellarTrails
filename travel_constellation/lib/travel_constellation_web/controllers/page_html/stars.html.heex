@@ -1,0 +1,12 @@
+<div id="star-canvas" phx-update="ignore" class="w-screen h-screen overflow-hidden m-0 p-0"></div>
+
+<script src="https://unpkg.com/three@0.157.0/build/three.min.js"></script>
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    if (window.mountStarScene) {
+      window.mountStarScene("star-canvas");
+    } else {
+      console.error("mountStarScene not found on window");
+    }
+  });
+</script>
